@@ -9,8 +9,8 @@ Default streams: audio + album art encrypted chunk-by-chunk with AES-256-GCM. Cl
 ## Quickstart
 
 ```bash
-bun run setup.js   # installs deps, builds the client
-bun run start      # starts the server on http://localhost:8080
+bun run setup.js
+bun run start
 ```
 
 Open `http://localhost:8080/login` — sign in as **admin** with password **1234asdf**.
