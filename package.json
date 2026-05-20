@@ -1,0 +1,12 @@
+{
+  "name": "limp",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun run server/index.ts",
+    "build": "cd client && bun run build",
+    "start": "bun run build && bun run dev",
+    "setup": "bun run setup.js",
+    "test": "bun test server/tests"
+  }
+}

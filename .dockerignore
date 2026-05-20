@@ -1,0 +1,14 @@
+node_modules
+.git
+data
+client/build
+client/.svelte-kit
+bun.lock
+client/bun.lock
+server/bun.lock
+*.md
+.claude
+.vscode
+.idea
+.env
+.env.*

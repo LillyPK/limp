@@ -1,0 +1,14 @@
+services:
+  limp:
+    build: .
+    image: limp:latest
+    container_name: limp
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - PORT=8080
+      - USER_PASSWORD=${USER_PASSWORD:-idgaf}
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-1234asdf}
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+@import '../node_modules/@skeletonlabs/skeleton/src/themes/wintry.css';
+@import '../node_modules/@skeletonlabs/skeleton/src/index.css';
+
+@layer base {
+	html, body {
+		height: 100%;
+		overflow: hidden;
+		overscroll-behavior: none;
+	}
+
+	/* Respect safe areas on notched devices (iPhone, etc.) */
+	body {
+		padding-top: env(safe-area-inset-top);
+		padding-bottom: env(safe-area-inset-bottom);
+		padding-left: env(safe-area-inset-left);
+		padding-right: env(safe-area-inset-right);
+	}
+}
